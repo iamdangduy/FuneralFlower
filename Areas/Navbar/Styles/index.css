@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  height: 35px;
+  background-color: #f76799;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 50px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
