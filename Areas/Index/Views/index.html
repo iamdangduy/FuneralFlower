@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Funeral Flower</title>
-    <link rel="stylesheet" href="../Styles/index.css" />
-    <link rel="stylesheet" href="../../Navbar/Styles/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(".header-top").load("../../Navbar/Views/index.html");
-      });
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header-top"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funeral Flower</title>
+  <link rel="stylesheet" href="../Styles/index.css" />
+  <link rel="stylesheet" href="../../Navbar/Styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".header-top").load("../../Navbar/Views/index.html");
+    });
+
+    $(function () {
+      $(".footer-bottom").load("../../Footer/Views/index.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-top"></div>
+    <div class="footer-bottom">
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
