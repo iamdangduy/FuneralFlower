@@ -6,6 +6,12 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.header-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .content {
   margin-top: 30px;
   display: flex;
@@ -36,4 +42,51 @@ body {
   margin: 5px 0px;
   text-align: justify;
   line-height: 1.6;
+}
+
+.product-brand-header {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  padding: 5px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-brand-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-brand-item {
+  width: 284px;
+  height: 450px;
+  border: 0.5px solid #f76799;
+  padding: 10px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.product-item-name {
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.product-item-price {
+  color: red;
+  font-weight: 600;
+}
+
+.zalo {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
