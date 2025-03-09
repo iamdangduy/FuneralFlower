@@ -8,17 +8,18 @@
 
 .footer-left {
   width: 20%;
-  background-color: green;
+  background-color: #f5f5f5;
 }
 
 .footer-main {
   width: 60%;
   display: flex;
+  background-color: #f5f5f5;
 }
 
 .footer-right {
   width: 20%;
-  background-color: green;
+  background-color: #f5f5f5;
 }
 
 .column-footer {
@@ -30,6 +31,7 @@
   text-transform: uppercase;
   font-weight: 700;
 }
- .header-content {
-    color: rgb(66, 66, 66);
- }
+
+.header-content {
+  color: rgb(66, 66, 66);
+}
