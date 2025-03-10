@@ -80,3 +80,14 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+img {
+  width: 100%;
+}
+
+.zalo {
+  width: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

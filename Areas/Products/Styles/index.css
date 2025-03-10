@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,25 +22,31 @@ body {
 
 .content-mid {
   width: 60%;
+  display: flex;
 }
 
 .content-right {
   width: 20%;
 }
 
-.description-brand-header {
-  width: 100%;
-  background-color: rgb(235, 235, 235);
-  padding: 5px;
-  border-top: 1px solid #f76799;
-  color: #f76799;
-  text-transform: uppercase;
+.content-mid-left {
+  width: 20%;
 }
 
-.description-brand-content {
-  margin: 5px 0px;
-  text-align: justify;
-  line-height: 1.6;
+.content-mid-right {
+  width: 80%;
+  padding: 0 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.zalo {
+  width: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .product-brand-header {
@@ -51,6 +57,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  border-top: 1px solid #f76799;
 }
 
 .product-brand-content {
@@ -60,15 +67,11 @@ body {
 }
 
 .product-brand-item {
-  width: 284px;
-  height: 450px;
+  width: 197px;
+  height: 350px;
   border: 0.5px solid #f76799;
   padding: 10px;
   text-decoration: none;
-}
-
-img {
-  width: 100%;
 }
 
 .product-item-name {
@@ -76,20 +79,10 @@ img {
   font-weight: 600;
   margin-top: 10px;
   font-size: 13px;
+  color: black;
 }
 
 .product-item-price {
   color: red;
   font-weight: 600;
-}
-
-.zalo {
-  width: 50px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
-.brand-header-right {
-  color: #f76799;
 }
