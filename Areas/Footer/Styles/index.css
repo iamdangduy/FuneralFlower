@@ -1,7 +1,6 @@
 .footer-bottom {
   width: 100%;
   /* background-color: #f5f5f5; */
-  height: 500px;
   display: flex;
   margin-top: 30px;
 }
@@ -34,4 +33,5 @@
 
 .header-content {
   color: rgb(66, 66, 66);
+
 }
