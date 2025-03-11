@@ -45,12 +45,12 @@ img {
 .zalo {
   width: 50px;
   position: fixed;
-  left: 0;
+  left: 20px;
   bottom: 0;
 }
 
 .product-brand-header {
-  width: 100%;
+  width: calc(100% - 12px);
   background-color: rgb(235, 235, 235);
   padding: 5px;
   text-transform: uppercase;
@@ -85,4 +85,61 @@ img {
 .product-item-price {
   color: red;
   font-weight: 600;
+}
+
+.product-sort {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  padding: 0 10px;
+}
+
+.content-left-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding: 0 10px;
+}
+
+.product-sort-date {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.product-sort-date.active {
+  background-color: #f76799;
+  color: white;
+}
+
+#price {
+  width: 180px; /* Thay đổi chiều rộng */
+  height: 33px; /* Thay đổi chiều cao */
+  font-size: 16px; /* Kích thước chữ */
+  padding: 5px; /* Khoảng cách bên trong */
+}
+
+.content-left-content {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.content-left-content-item {
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-left-content-item.active {
+  color: #f76799;
 }
