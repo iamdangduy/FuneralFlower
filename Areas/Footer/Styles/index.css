@@ -35,3 +35,26 @@
   color: rgb(66, 66, 66);
 
 }
+
+@media only screen and (max-width:500px) {
+
+  /* màn hình mobile */
+  .footer-left {
+    width: 0%;
+  }
+
+  .footer-right {
+    width: 0%;
+  }
+
+  .footer-main {
+    width: 100%;
+    padding: 10px 10px;
+    display: block;
+  }
+
+  .column-footer {
+    width: 100%;
+  }
+
+}
