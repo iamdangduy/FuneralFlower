@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="Areas/Navbar/Styles/index.css" />
     <link rel="stylesheet" href="Areas/Footer/Styles/index.css" />
+    <link rel="stylesheet" href="Areas/Contact/Styles/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,6 +33,10 @@
 
       $(function () {
         $(".footer-bottom").load("Areas/Footer/Views/index.html");
+      });
+
+      $(function () {
+        $(".content-left").load("Areas/Contact/Views/index.html");
       });
     </script>
   </head>
@@ -69,18 +74,7 @@
 
       <!-- Body -->
       <div class="content">
-        <div class="content-left">
-          <div class="zalo">
-            <a href="https://zalo.me/84333133942" target="_blank">
-              <img
-                src="images/logo-zalo-vector-trungthanhprint-9.png"
-                title="zalo"
-              /> </a
-            ><a href="https://zalo.me/84333133942" target="_blank">
-              <img src="images/facebook-logo.png" title="zalo" />
-            </a>
-          </div>
-        </div>
+        <div class="content-left"></div>
         <div class="content-mid">
           <div class="description-brand">
             <div class="description-brand-header">
@@ -128,7 +122,10 @@
               <a href="#"><div class="brand-header-right">Xem tất cả</div></a>
             </div>
             <div class="product-brand-content">
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -138,8 +135,19 @@
                 <div class="product-item-name">
                   Bình hoa chúc mừng - Nắng mới
                 </div>
-                <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+                <div class="product-item-price">3.000.000 VND</div>
+                <div class="product-button-buy">
+                  <i
+                    class="fa-solid fa-cart-arrow-down"
+                    style="margin-right: 10px"
+                  ></i
+                  >Mua qua Zalo
+                </div>
+              </a>
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -151,7 +159,10 @@
                 </div>
                 <div class="product-item-price">3.000.000 VND</div>
               </a>
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -163,7 +174,10 @@
                 </div>
                 <div class="product-item-price">3.000.000 VND</div>
               </a>
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -175,7 +189,10 @@
                 </div>
                 <div class="product-item-price">3.000.000 VND</div>
               </a>
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -187,7 +204,10 @@
                 </div>
                 <div class="product-item-price">3.000.000 VND</div>
               </a>
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -207,7 +227,10 @@
               <a href="#"><div class="brand-header-right">Xem tất cả</div></a>
             </div>
             <div class="product-brand-content">
-              <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              <a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -218,7 +241,10 @@
                   Bình hoa chúc mừng - Nắng mới
                 </div>
                 <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              ><a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -229,7 +255,10 @@
                   Bình hoa chúc mừng - Nắng mới
                 </div>
                 <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              ><a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -240,7 +269,10 @@
                   Bình hoa chúc mừng - Nắng mới
                 </div>
                 <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              ><a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -251,7 +283,10 @@
                   Bình hoa chúc mừng - Nắng mới
                 </div>
                 <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              ><a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"
@@ -262,7 +297,10 @@
                   Bình hoa chúc mừng - Nắng mới
                 </div>
                 <div class="product-item-price">3.000.000 VND</div> </a
-              ><a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+              ><a
+                href="/Areas/ProductDetail/Views/index.html"
+                class="product-brand-item"
+              >
                 <div class="product-item-image">
                   <img
                     src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg"

@@ -5,10 +5,11 @@
 .navbar {
   width: 100%;
   height: 35px;
-  background-color: #f76799;
+  background-color: white;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  border-bottom: 1px solid gray;
 }
 
 .header {
@@ -23,7 +24,7 @@
   align-items: center;
   cursor: pointer;
   padding: 0 20px;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
@@ -36,7 +37,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 
@@ -45,6 +46,6 @@ a {
   /* màn hình mobile */
   .navbar-item {
     padding: 0 5px;
-    border-right: 1px solid rgb(235, 235, 235);
+    border-right: 1px solid gray ;
   }
 }

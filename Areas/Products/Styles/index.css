@@ -57,7 +57,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  border-top: 1px solid #f76799;
+  border-top: 1px solid gray;
 }
 
 .product-brand-content {
@@ -69,7 +69,7 @@ img {
 .product-brand-item {
   width: 197px;
   height: 350px;
-  border: 0.5px solid #f76799;
+  border: 0.5px solid gray;
   padding: 10px;
   text-decoration: none;
 }
@@ -118,7 +118,7 @@ img {
 }
 
 .product-sort-date.active {
-  background-color: #f76799;
+  background-color: gray;
   color: white;
 }
 
@@ -141,7 +141,7 @@ img {
 }
 
 .content-left-content-item.active {
-  color: #f76799;
+  color: gray;
 }
 
 @media only screen and (max-width: 500px) {

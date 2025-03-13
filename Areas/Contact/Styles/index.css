@@ -1,0 +1,17 @@
+.zalo {
+  width: 50px;
+  position: fixed;
+  left: 20px;
+  bottom: 0;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.facebook {
+  width: 50px;
+  position: fixed;
+  left: 20px;
+  bottom: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
