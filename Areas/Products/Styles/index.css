@@ -143,3 +143,29 @@ img {
 .content-left-content-item.active {
   color: #f76799;
 }
+
+@media only screen and (max-width: 500px) {
+  /* màn hình mobile */
+  .content-mid {
+    display: block;
+  }
+
+  .content-mid-left {
+    display: none;
+    width: 0%;
+  }
+
+  .content-mid-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .product-sort{
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-brand-item {
+    width: 44% ;
+  }
+}

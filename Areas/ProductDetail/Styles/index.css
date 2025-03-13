@@ -109,11 +109,11 @@ img {
 
 .content-mid-bot-content {
   margin-top: 20px;
-  border: 1px solid rgb(120,120,120);
+  border: 1px solid rgb(120, 120, 120);
   border-radius: 10px;
   height: 100px;
   padding: 20px 40px;
-  color: rgb(120,120,120);
+  color: rgb(120, 120, 120);
 }
 
 .review-rating__summary {
@@ -123,4 +123,31 @@ img {
 .review-rating__point {
   font-size: 40px;
   margin-right: 10px;
+}
+
+.content-mid-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  /* màn hình mobile */
+  .content-mid-container {
+    display: block;
+  }
+
+  .content-mid-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content-mid-right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image-product-detail {
+    width: 100%;
+  }
 }

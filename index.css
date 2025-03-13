@@ -94,20 +94,8 @@ img {
   color: #f76799;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   /* màn hình mobile */
-  .content-left {
-    width: 0%;
-  }
-
-  .content-right {
-    width: 0%;
-  }
-
-  .content-mid {
-    width: 100%;
-    padding: 0px 10px;
-  }
 
   .product-brand-item {
     width: 50%;
