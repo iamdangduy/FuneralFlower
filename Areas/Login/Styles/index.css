@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-login {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nickname {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.password {
+    margin-top: 10px;
+    width: 100%;
+}
+
+input {
+    height: 20px;
+}
+
+.btn-login {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}

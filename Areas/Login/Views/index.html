@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/Areas/Login/Styles/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container" ng-app="myLogin" ng-controller="myLoginCtrl">
+        <div class="modal-login">
+            <div class="header">
+                <h3 style="text-align: center;">Đăng nhập</h3>
+            </div>
+            <div class="nickname">
+                <span>Tài khoản</span>
+                <input type="text" ng-model="item.UserName" name="" id="" placeholder="Nhập tài khoản">
+            </div>
+            <div class="password">
+                <span>Mật khẩu</span>
+                <input type="password" ng-model="item.Password" name="" id="" placeholder="Nhập tài khoản">
+            </div>
+            <div class="btn-login">
+                <button ng-click="login(item)">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/js/helper.js"></script>
+<script src="/Areas/Login/Js/index.js"></script>
 </html>
