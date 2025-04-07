@@ -21,9 +21,6 @@ var SendGetRequest = async function (url) {
 }
 
 var SendPostRequest = async function (url, obj) {
-    console.log(url);
-    console.log(obj);
-
     try {
         let headers = {};
         headers["Content-Type"] = 'application/json';

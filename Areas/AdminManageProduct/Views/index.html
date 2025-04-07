@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Areas/AdminManageProduct/Styles/index.css">
+    <script src="https://kit.fontawesome.com/95d9b5bfe3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" ng-app="myManageProduct" ng-controller="myManageProductCtrl">
+        <div class="header">
+            <h1>Quản lý sản phẩm</h1>
+            <div class="btn-login">
+                <button id="addProductBtn">Thêm mới</button>
+            </div>
+        </div>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px; ">Hành động</th>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex; justify-content: space-around;">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-eye"></i>
+                        </td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; justify-content: space-around;">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-eye"></i>
+                        </td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; justify-content: space-around;">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-eye"></i>
+                        </td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Germany</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="addProductModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Thêm mới sản phẩm</h2>
+            <form id="addProductForm">
+                <label for="productName">Tên sản phẩm:</label><br>
+                <input type="text" id="productName" name="productName" ng-model="item.ProductName"><br><br>
+                <label for="productPrice">Giá cũ sản phẩm:</label><br>
+                <input type="number" id="productOldPrice" name="productOldPrice" ng-model="item.ProductOldPrice"><br><br>
+                <label for="productPrice">Giá mới sản phẩm:</label><br>
+                <input type="number" id="productNewPrice" name="productNewPrice" ng-model="item.ProductNewPrice"><br><br>
+                <label for="description">Mô tả sản phẩm:</label><br>
+                <input type="text" id="description" name="description" ng-model="item.Description"><br><br>
+                <button type="submit">Thêm sản phẩm</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/Areas/AdminManageProduct/Js/index.js"></script>
+
+</html>
