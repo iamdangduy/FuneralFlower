@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Areas/AdminManageProduct/Styles/index.css">
     <script src="https://kit.fontawesome.com/95d9b5bfe3.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container" ng-app="myManageProduct" ng-controller="myManageProductCtrl">
+    <div class="container">
         <div class="header">
             <h1>Quản lý sản phẩm</h1>
             <div class="btn-login">
@@ -67,18 +66,25 @@
             <h2>Thêm mới sản phẩm</h2>
             <form id="addProductForm">
                 <label for="productName">Tên sản phẩm:</label><br>
-                <input type="text" id="productName" name="productName" ng-model="item.ProductName"><br><br>
+                <input type="text" id="productName" name="productName"><br><br>
                 <label for="productPrice">Giá cũ sản phẩm:</label><br>
-                <input type="number" id="productOldPrice" name="productOldPrice" ng-model="item.ProductOldPrice"><br><br>
+                <input type="number" id="productOldPrice" name="productOldPrice"><br><br>
                 <label for="productPrice">Giá mới sản phẩm:</label><br>
-                <input type="number" id="productNewPrice" name="productNewPrice" ng-model="item.ProductNewPrice"><br><br>
+                <input type="number" id="productNewPrice" name="productNewPrice"><br><br>
                 <label for="description">Mô tả sản phẩm:</label><br>
-                <input type="text" id="description" name="description" ng-model="item.Description"><br><br>
-                <button type="submit">Thêm sản phẩm</button>
+                <input type="text" id="description" name="description"><br><br>
             </form>
+            <div class="image-picker-2">
+                <div class="preview"
+                    style="background-image: url('https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg');"
+                    onclick="AddImage(this);"></div>
+                <input type="file" onchange="AddImage_OnChange(this);" />
+                <input type="hidden" value="" />
+            </div>
+            <button type="submit">Thêm sản phẩm</button>
         </div>
     </div>
 </body>
 <script src="/Areas/AdminManageProduct/Js/index.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </html>
