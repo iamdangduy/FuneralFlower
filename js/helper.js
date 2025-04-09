@@ -2,10 +2,18 @@ const isDebug = true; // false
 
 const Enum = {
     URL: {
-        API: isDebug ? 'https://localhost:7081/api/' : 'https://xyz.com/api/'
+        API: isDebug ? 'https://localhost:7081/api/' : 'https://xyz.com/api/',
+        IMG: isDebug ? 'https://localhost:7081/' : 'https://xyz.com/api/'
     }
 }
 
+var GetShareImage = function (imageUrl) {
+    try {
+        return Enum.URL.IMG + imageUrl;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 var SendGetRequest = async function (url) {
     try {

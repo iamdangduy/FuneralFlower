@@ -48,20 +48,49 @@ document.getElementById('insertProduct').addEventListener('click', async functio
     let productNewPrice = $('#productNewPrice').val();
     let description = $('#description').val();
     let valueImage = $('#valueImage').val();
-    
+
     let reqData = {
         ProductName: nameProduct,
+        ProductOldPrice: productOldPrice,
+        ProductNewPrice: productNewPrice,
+        Description: description,
         ProductImageUrl: valueImage
     };
 
-    console.log(1);
     const rs = await SendPostRequest(`Product/InsertProduct`, reqData);
 
     if (rs.status == 'success') {
-        if (rs.data.token) {
-            $scope.setCookie('user_cookie', rs.data.token);
-            window.location.href = "/Areas/AdminManageProduct/Views/index.html";
-        }
+        alert("Thêm sản phẩm thành công!");
+        modal.style.display = "none";
     }
 });
+
+
+const initPage = async function () {
+    const rs = await SendGetRequest(`Product/GetListProduct`);
+    if (rs.status == 'success') {
+        const tbody = $('#productTableBody');
+        tbody.empty(); // Xóa nội dung cũ
+
+        rs.data.forEach(product => {
+            const row = `
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-pen-to-square" style="cursor: pointer;" onclick="editProduct(${product.id})"></i>
+                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct(${product.id})"></i>
+                    </td>
+                    <td>${product.productName}</td>
+                    <td>${product.productOldPrice}</td>
+                    <td>${product.productNewPrice}</td>
+                    <td><div class="preview"
+                    style="background-image: url('${GetShareImage(product.productImageUrl)}');"></div></td>
+                    <td>${product.description}</td>
+                </tr>
+            `;
+            tbody.append(row);
+        });
+    }
+}
+
+initPage();
 

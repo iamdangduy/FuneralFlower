@@ -22,39 +22,14 @@
                 <thead>
                     <tr>
                         <th style="width: 40px; ">Hành động</th>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>Country</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá cũ</th>
+                        <th>Giá mới</th>
+                        <th>Ảnh sản phẩm</th>
+                        <th>Mô tả</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td style="display: flex; justify-content: space-around;">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-eye"></i>
-                        </td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex; justify-content: space-around;">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-eye"></i>
-                        </td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex; justify-content: space-around;">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-eye"></i>
-                        </td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                        <td>Germany</td>
-                    </tr>
+                <tbody id="productTableBody">
                 </tbody>
             </table>
         </div>
@@ -79,7 +54,7 @@
                     style="background-image: url('https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg');"
                     onclick="AddImage(this);"></div>
                 <input type="file" onchange="AddImage_OnChange(this);" />
-                <input type="hidden" value="" id="valueImage"/>
+                <input type="hidden" value="" id="valueImage" />
             </div>
             <button type="submit" id="insertProduct">Thêm sản phẩm</button>
         </div>
@@ -88,4 +63,5 @@
 <script src="/js/helper.js"></script>
 <script src="/Areas/AdminManageProduct/Js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </html>
