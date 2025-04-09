@@ -41,3 +41,27 @@ var AddImage_OnChange = function (el) {
 
     $(el).val('');
 }
+
+document.getElementById('insertProduct').addEventListener('click', async function () {
+    let nameProduct = $('#productName').val();
+    let productOldPrice = $('#productOldPrice').val();
+    let productNewPrice = $('#productNewPrice').val();
+    let description = $('#description').val();
+    let valueImage = $('#valueImage').val();
+    
+    let reqData = {
+        ProductName: nameProduct,
+        ProductImageUrl: valueImage
+    };
+
+    console.log(1);
+    const rs = await SendPostRequest(`Product/InsertProduct`, reqData);
+
+    if (rs.status == 'success') {
+        if (rs.data.token) {
+            $scope.setCookie('user_cookie', rs.data.token);
+            window.location.href = "/Areas/AdminManageProduct/Views/index.html";
+        }
+    }
+});
+
