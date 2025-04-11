@@ -83,7 +83,10 @@ document
       $("#productNewPrice").val("");
       $("#description").val("");
       $("#valueImage").val("");
-      $(".preview").css('background-image', 'url("https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg")');
+      $(".preview").css(
+        "background-image",
+        'url("https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg")'
+      );
       initPage();
     }
   });
@@ -98,12 +101,9 @@ const initPage = async function () {
       const row = `
                 <tr>
                     <td>
-                        <i class="fa-solid fa-pen-to-square" style="cursor: pointer;" onclick="editProduct(${
+                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct('${
                           product.id
-                        })"></i>
-                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct(${
-                          product.id
-                        })"></i>
+                        }')"></i>
                     </td>
                     <td>${product.productName}</td>
                     <td>${product.productOldPrice}</td>
@@ -117,6 +117,19 @@ const initPage = async function () {
             `;
       tbody.append(row);
     });
+  }
+};
+
+const deleteProduct = async function (id) {
+  // Xác nhận trước khi xóa
+  if (!confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?")) {
+    return;
+  }
+
+  const rs = await SendGetRequest(`Product/DeleteProduct?Id=${id}`);
+  if (rs.status == "success") {
+    alert("Xóa thành công!");
+    initPage();
   }
 };
 
