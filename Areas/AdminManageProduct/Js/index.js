@@ -58,6 +58,8 @@ var AddImage_OnChange = function (el) {
 document
   .getElementById("insertProduct")
   .addEventListener("click", async function () {
+    checkCookie();
+
     let nameProduct = $("#productName").val();
     let productOldPrice = $("#productOldPrice").val();
     let productNewPrice = $("#productNewPrice").val();
@@ -121,6 +123,7 @@ const initPage = async function () {
 };
 
 const deleteProduct = async function (id) {
+  checkCookie();
   // Xác nhận trước khi xóa
   if (!confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?")) {
     return;
@@ -130,6 +133,20 @@ const deleteProduct = async function (id) {
   if (rs.status == "success") {
     alert("Xóa thành công!");
     initPage();
+  }
+};
+
+const checkCookie = async function () {
+  var cookie = getCookie("user_cookie");
+  if (!cookie) {
+    window.location.href = "/Areas/Login/Views/index.html";
+  }
+
+  const rs = await SendGetRequest(
+    `UserToken/CheckUserByCookie?cookie=` + cookie
+  );
+  if (rs.status != "success") {
+    window.location.href = "/Areas/Login/Views/index.html";
   }
 };
 
