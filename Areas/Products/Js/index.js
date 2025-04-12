@@ -7,7 +7,7 @@ const initPage = async function () {
     rs.data.forEach((product) => {
       const row = `
                   <a
-                  href="/Areas/ProductDetail/Views/index.html"
+                  href="/Areas/ProductDetail/Views/index.html?id=${product.id}"
                   class="product-brand-item"
                 >
                   <div class="product-item-image">

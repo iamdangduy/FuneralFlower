@@ -28,7 +28,7 @@ const initPage = async function () {
 
     rs.data.forEach((product) => {
       const row = `
-                  <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+                  <a href="/Areas/ProductDetail/Views/index.html?id=${product.id}" class="product-brand-item">
                     <div class="product-item-image">
                         <img src="${GetShareImage(
                           product.productImageUrl
