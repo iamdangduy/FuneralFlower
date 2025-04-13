@@ -119,7 +119,7 @@ const initPage = async function () {
                 <div class="product-contact-order">
                   <div style="width: 200px">
                     <a
-                      href="https://zalo.me/84333133942"
+                      href="https://zalo.me/84876526226"
                       target="_blank"
                       style="text-decoration: none"
                     >
