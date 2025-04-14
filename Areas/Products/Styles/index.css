@@ -11,8 +11,15 @@ body {
   z-index: 1;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% viewport */
+}
+
 .content {
   margin-top: 30px;
+  flex: 1;
   display: flex;
 }
 
@@ -157,6 +164,7 @@ img {
   justify-content: center;
   border-radius: 5px;
   background-color: rgb(235, 178, 62);
+  color: black;
 }
 
 @media only screen and (max-width: 500px) {

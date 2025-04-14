@@ -7,6 +7,12 @@ function getQueryParam(param) {
 // Lấy id từ query string
 const productId = getQueryParam('id');
 
+function formatCurrency(amount) {
+  return new Intl.NumberFormat('vi-VN', {
+    style: 'currency',
+    currency: 'VND',
+  }).format(amount);
+}
 
 const initPage = async function () {
     const rs = await SendGetRequest(`Product/GetProductById?Id=${productId}`);
@@ -17,7 +23,7 @@ const initPage = async function () {
         const row = `
                     <div class="content-mid-left">
               <div class="image-product-detail">
-                <img src="${GetShareImage(rs.data.productImageUrl)}" alt="" />
+                <img src="${GetShareImage(rs.data.productImageUrl)}" alt=""/>
               </div>
             </div>
             <div class="content-mid-right">
@@ -106,7 +112,7 @@ const initPage = async function () {
                   >( <b>11</b> đánh giá )</span
                 >
               </div>
-              <div class="product-price">${rs.data.productNewPrice} VND</div>
+              <div class="product-price">${formatCurrency(rs.data.productNewPrice)}</div>
               <div class="product-description">
                 <div class="woocommerce-product-details__short-description">
                   <h3>
@@ -152,10 +158,10 @@ const initPage = async function () {
                     Hà Nội:
                     <b
                       ><a
-                        href="https://zalo.me/84333133942"
+                        href="https://zalo.me/84876526226"
                         target="_blank"
                         style="color: rgb(235, 178, 62); text-decoration: none"
-                        >02466818088 - 0983698184</a
+                        >0876526226</a
                       ></b
                     >
                   </div>

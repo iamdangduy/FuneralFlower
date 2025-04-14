@@ -5,35 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Funeral Flower</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="Areas/Navbar/Styles/index.css" />
-  <link rel="stylesheet" href="Areas/Footer/Styles/index.css" />
-  <link rel="stylesheet" href="Areas/Contact/Styles/index.css" />
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/Areas/Navbar/Styles/index.css" />
+  <link rel="stylesheet" href="/Areas/Footer/Styles/index.css" />
+  <link rel="stylesheet" href="/Areas/Contact/Styles/index.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/main.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <script src="https://kit.fontawesome.com/95d9b5bfe3.js" crossorigin="anonymous"></script>
-  <style>
-    .mySlides {
-      display: none;
-    }
-  </style>
   <script>
     $(function () {
-      $(".header-top").load("Areas/Navbar/Views/index.html");
+      $(".header-top").load("/Areas/Navbar/Views/index.html");
     });
 
     $(function () {
-      $(".footer-bottom").load("Areas/Footer/Views/index.html");
+      $(".footer-bottom").load("/Areas/Footer/Views/index.html");
     });
 
     $(function () {
-      $(".content-left").load("Areas/Contact/Views/index.html");
+      $(".content-left").load("/Areas/Contact/Views/index.html");
     });
   </script>
 </head>
@@ -42,18 +36,6 @@
   <div class="container">
     <!-- Navbar -->
     <div class="header-top"></div>
-    <!-- Slideshow -->
-    <div class="w3-content w3-display-container">
-      <img class="mySlides" src="images/baner-vong-hoa-tang-le-dien-hoa-hai-ha.jpg" style="width: 100%" />
-      <img class="mySlides" src="images/banner-hoa-vieng.jpg" style="width: 100%" />
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
-        &#10094;
-      </button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
-        &#10095;
-      </button>
-    </div>
 
     <!-- Body -->
     <div class="content">
@@ -94,7 +76,7 @@
             nghiêm và trang trọng.
           </div>
           <div style="text-align: center; font-size: 20px; font-weight: 900; color: #EBA83E;">
-            <a href="tel:0876526226">0876.526.226</a>
+            <a href="tel:0876526226" style="color: #EBA83E;">0876.526.226</a>
           </div>
         </div>
         <div class="product-brand">
@@ -105,90 +87,6 @@
             </a>
           </div>
           <div class="product-brand-content">
-            <!-- <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a>
-            <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
-              <div class="product-item-image">
-                <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
-              </div>
-              <div class="product-item-name">
-                Bình hoa chúc mừng - Nắng mới
-              </div>
-              <div class="product-item-price">3.000.000 VND</div>
-              <div class="product-button-buy">
-                <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
-              </div>
-            </a> -->
           </div>
         </div>
       </div>
