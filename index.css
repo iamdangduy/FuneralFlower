@@ -30,10 +30,9 @@ body {
 
 .description-brand-header {
   width: 100%;
-  background-color: rgb(235, 235, 235);
+  background-color: #EBA83E;
   padding: 5px;
-  border-top: 1px solid gray;
-  color: gray;
+  border-top: 1px solid black;
   text-transform: uppercase;
 }
 
@@ -45,7 +44,7 @@ body {
 
 .product-brand-header {
   width: 100%;
-  background-color: rgb(235, 235, 235);
+  background-color: #EBA83E;
   padding: 5px;
   text-transform: uppercase;
   display: flex;
@@ -84,10 +83,6 @@ img {
   font-weight: 600;
 }
 
-.brand-header-right {
-  color: gray;
-}
-
 .product-button-buy {
   margin-top: 10px;
   height: 30px;
@@ -95,7 +90,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background-color: rgb(235, 178, 62);
+  background-color: #EBA83E;
 }
 
 /* .product-item-image {
