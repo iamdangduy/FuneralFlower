@@ -1,130 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Funeral Flower</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="Areas/Navbar/Styles/index.css" />
-    <link rel="stylesheet" href="Areas/Footer/Styles/index.css" />
-    <link rel="stylesheet" href="Areas/Contact/Styles/index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script
-      src="https://kit.fontawesome.com/95d9b5bfe3.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .mySlides {
-        display: none;
-      }
-    </style>
-    <script>
-      $(function () {
-        $(".header-top").load("Areas/Navbar/Views/index.html");
-      });
 
-      $(function () {
-        $(".footer-bottom").load("Areas/Footer/Views/index.html");
-      });
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funeral Flower</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="Areas/Navbar/Styles/index.css" />
+  <link rel="stylesheet" href="Areas/Footer/Styles/index.css" />
+  <link rel="stylesheet" href="Areas/Contact/Styles/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <script src="https://kit.fontawesome.com/95d9b5bfe3.js" crossorigin="anonymous"></script>
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+  <script>
+    $(function () {
+      $(".header-top").load("Areas/Navbar/Views/index.html");
+    });
 
-      $(function () {
-        $(".content-left").load("Areas/Contact/Views/index.html");
-      });
-    </script>
-  </head>
+    $(function () {
+      $(".footer-bottom").load("Areas/Footer/Views/index.html");
+    });
 
-  <body>
-    <div class="container">
-      <!-- Navbar -->
-      <div class="header-top"></div>
-      <!-- Slideshow -->
-      <div class="w3-content w3-display-container">
-        <img
-          class="mySlides"
-          src="images/baner-vong-hoa-tang-le-dien-hoa-hai-ha.jpg"
-          style="width: 100%"
-        />
-        <img
-          class="mySlides"
-          src="images/banner-hoa-vieng.jpg"
-          style="width: 100%"
-        />
+    $(function () {
+      $(".content-left").load("Areas/Contact/Views/index.html");
+    });
+  </script>
+</head>
 
-        <button
-          class="w3-button w3-black w3-display-left"
-          onclick="plusDivs(-1)"
-        >
-          &#10094;
-        </button>
-        <button
-          class="w3-button w3-black w3-display-right"
-          onclick="plusDivs(1)"
-        >
-          &#10095;
-        </button>
-      </div>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="header-top"></div>
+    <!-- Slideshow -->
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/baner-vong-hoa-tang-le-dien-hoa-hai-ha.jpg" style="width: 100%" />
+      <img class="mySlides" src="images/banner-hoa-vieng.jpg" style="width: 100%" />
 
-      <!-- Body -->
-      <div class="content">
-        <div class="content-left"></div>
-        <div class="content-mid">
-          <div class="description-brand">
-            <div class="description-brand-header">
-              THƯƠNG HIỆU SHOP HOA HẢI HÀ
-            </div>
-            <div class="description-brand-content">
-              Thương hiệu Shop hoa Hải Hà với hơn 10 năm kinh nghiệm trong lĩnh
-              vực hoa tươi. Chúng tôi chuyên cung cấp dịch vụ điện hoa toàn
-              quốc, uy tín, chất lượng hàng đầu. Bằng sứ mệnh cao cả, tình yêu
-              và sự trân trọng với thế giới hoa, đề cao giá trị của sự tinh tế,
-              Shop hoa Hải Hà đã trở thành một sự lựa chọn số 1 và là người bạn
-              đáng tin cậy hàng đầu của quý khách hàng toàn quốc. Kim chỉ nam
-              trong phương châm kinh doanh của chúng tôi đó là: “Đặt quyền lợi
-              của khách hàng lên hàng đầu.” Các sản phẩm của chúng tôi luôn đề
-              cao giá trị chất lượng. Phù hợp yêu cầu và đem lại sự hài lòng
-              tuyệt đối cho khách hàng. Đặt mục tiêu sản phẩm phải thật tốt, mẫu
-              mã phù hợp xu hướng và thị hiếu khách hàng nhưng giá thành phải
-              hợp lý. Đó là cái cốt lõi. Đến với thế giới hoa tại Shop hoa Hải
-              Hà để truyền tải trọn vẹn tâm ý và tình cảm một cách tinh tế, ý
-              nghĩa nhất.
-            </div>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+        &#10095;
+      </button>
+    </div>
+
+    <!-- Body -->
+    <div class="content">
+      <div class="content-left"></div>
+      <div class="content-mid">
+        <div class="description-brand">
+          <div class="description-brand-header">
+            THƯƠNG HIỆU ĐẶT HOA VIẾNG HÀ NỘI
           </div>
-          <div class="description-brand">
-            <div class="description-brand-header">
-              Dịch vụ Điện hoa Hải Hà – Chuỗi hơn 600 shop hoa tại 63 tỉnh
-            </div>
-            <div class="description-brand-content">
-              Điện hoa Hải Hà gồm một hệ thống chuỗi hơn 600 dịch vụ điện hoa
-              toàn quốc tại 63 tỉnh thành bao gồm: Dịch vụ điện hoa Hà Nội giá
-              rẻ, điện hoa Hồ Chí Minh, set hoa online Hà Nội nhanh chóng, set
-              hoa online Sài Gòn, Điện hoa Hải Phòng, Điện hoa Đà Nẵng,… Nên
-              chúng tôi tự tin sẽ giúp quý khách có thể gửi bất kỳ một điện hoa
-              nào tại bất kỳ nơi nào tại Việt Nam. Shop hoa Hải Hà là một shop
-              hoa trực thuộc chuỗi hệ thống của Điện hoa Hải Hà. Các shop hoa
-              làm việc theo một quy trình điện hoa chung của Điện hoa Hải Hà đề
-              ra. Nên có sự gắn kết và hỗ trợ một đơn hàng rất nhanh chóng và
-              tiện lợi. Nên quý khách chỉ cần liên hệ với tổng đài của chúng tôi
-              để đặt hàng và giải đáp mọi thắc mắc nếu có phát sinh trong quá
-              trình sử dụng dịch vụ điện hoa.
-            </div>
+          <div class="description-brand-content">
+            Hoa viếng là một phần quan trọng trong văn hóa và phong tục của người Việt Nam, đặc biệt là trong các dịp
+            tang lễ.
+            <br>
+            Hoa viếng - Tưởng nhớ và lòng biết ơn.
+            <br>
+            Hoa viếng là một biểu tượng của thành kính , lòng biết ơn. Trong văn hóa Việt Nam, hoa viếng được sử dụng
+            trong dịp tang lễ.
+            <br>
+            Với ý nghĩa sâu sắc, hoa viếng giúp con người thể hiện lòng thành, sự trân trọng và biết ơn đối với những
+            người đã khuất.
+            <br>
+            Các loại hoa viếng phổ biến.
+            <br>
+            Có nhiều loại hoa viếng khác nhau, mỗi loại đều có ý nghĩa và giá trị riêng. Một số loại hoa viếng phổ biến
+            bao gồm:
+            <br>
+            Hoa cúc: tượng trưng cho sự trường thọ, may mắn và hạnh phúc<br>
+            Hoa lan: cũng được sử dụng trong tang lễ thể hiện sự tôn kính và biết ơn<br>
+            Hoa ly: Còn được coi là chia buồn ly biệt với người đã mất<br>
+            Cách sử dụng hoa viếng
+            <br>
+            Hoa viếng có thể được sử dụng trong nhiều cách một số cách sử dụng hoa viếng phổ biến bao gồm:
+            <br>
+            Đặt hoa viếng trên mộ hoặc nơi an nghỉ của người thân yêu.
+            Sử dụng hoa viếng trong các buổi tang lễ và để chia buồn cùng gia đình người đã khuất
+            <br>
+            Hoa viếng là một phần quan trọng trong văn hóa và phong tục của người việt nam trong các buổi tang lễ trang
+            nghiêm và trang trọng.
           </div>
-          <div class="product-brand">
-            <div class="product-brand-header">
-              <div class="brand-header-left">Hoa tang lễ</div>
-              <a href="/Areas/Products/Views/index.html">
-                <div class="brand-header-right">Xem tất cả</div>
-              </a>
-            </div>
-            <div class="product-brand-content">
-              <!-- <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
+          <div style="text-align: center; font-size: 20px; font-weight: 900; color: #EBA83E;">
+            <a href="tel:0876526226">0876.526.226</a>
+          </div>
+        </div>
+        <div class="product-brand">
+          <div class="product-brand-header">
+            <div class="brand-header-left">Hoa tang lễ</div>
+            <a href="/Areas/Products/Views/index.html">
+              <div class="brand-header-right">Xem tất cả</div>
+            </a>
+          </div>
+          <div class="product-brand-content">
+            <!-- <a href="/Areas/ProductDetail/Views/index.html" class="product-brand-item">
               <div class="product-item-image">
                 <img src="images/2-Binh-hoa-chuc-mung_Nang_moi-450x600.jpg" alt="" />
               </div>
@@ -208,15 +189,16 @@
                 <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px"></i>Mua qua Zalo
               </div>
             </a> -->
-            </div>
           </div>
         </div>
-        <div class="content-right"></div>
       </div>
-      <!-- Footer -->
-      <div class="footer-bottom"></div>
+      <div class="content-right"></div>
     </div>
-  </body>
-  <script src="js/helper.js"></script>
-  <script src="index.js"></script>
+    <!-- Footer -->
+    <div class="footer-bottom"></div>
+  </div>
+</body>
+<script src="js/helper.js"></script>
+<script src="index.js"></script>
+
 </html>
