@@ -2,19 +2,75 @@
   width: 50px;
   position: fixed;
   left: 20px;
-  bottom: 0;
+  bottom: 90px;
   background-color: white;
   border-radius: 5px;
 }
 
 .facebook {
-  width: 150px;
+  width: 130px;
   position: fixed;
   left: 20px;
   bottom: 50px;
   background-color: #2a6496;
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
-  padding: 5px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+}
+
+.facebook a {
+  color: white;
+}
+
+.telephone {
+  width: 210px;
+  background-color: #12D843;
+  position: fixed;
+  left: 20px;
+  bottom: 5px;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.telephone a {
+  color: white;
+}
+
+.fa-phone {
+  background-color: #D72928;
+  padding: 11px;
+  border-radius: 50%;
+  position: fixed;
+  left: 210px;
+  bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* màn hình mobile */
+  .zalo {
+    left: 0;
+  }
+
+  .facebook {
+    left: 0;
+  }
+
+  .telephone {
+    left: 0;
+  }
+
+  .fa-phone {
+    left: 190px;
+  }
 }
