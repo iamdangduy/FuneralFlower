@@ -43,7 +43,7 @@ body {
 
 .description-brand-header {
   width: 100%;
-  background-color: #EBA83E;
+  background-color: #eba83e;
   padding: 5px;
   border-top: 1px solid black;
   text-transform: uppercase;
@@ -56,8 +56,7 @@ body {
 }
 
 .product-brand-header {
-
-  background-color: #EBA83E;
+  background-color: #eba83e;
   padding: 5px;
   text-transform: uppercase;
   display: flex;
@@ -76,7 +75,7 @@ body {
 }
 
 .product-brand-item {
-  width: 262px;
+  width: 284px;
   height: 500px;
   border: 0.5px solid gray;
   padding: 10px;
@@ -108,7 +107,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background-color: #EBA83E;
+  background-color: #eba83e;
   color: black;
 }
 
@@ -116,11 +115,71 @@ img {
   height: 350px;
 }
 
+/* contact css */
+.zalo {
+  width: 60px;
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.facebook {
+  width: 130px;
+  position: fixed;
+  left: 20px;
+  bottom: 60px;
+  background-color: #2a6496;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+}
+
+.facebook a {
+  color: white;
+}
+
+.telephone {
+  width: 230px;
+  background-color: #12d843;
+  position: fixed;
+  left: 20px;
+  bottom: 5px;
+  border-radius: 20px;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.telephone a {
+  color: white;
+}
+
+.fa-phone {
+  background-color: #d72928;
+  padding: 15px;
+  border-radius: 50%;
+  position: fixed;
+  left: 210px;
+  bottom: 5px;
+}
+
+/* end contact css */
+
 @media only screen and (max-width: 500px) {
   /* màn hình mobile */
 
   .product-brand-item {
-    width: 44%;
+    width: 50%;
   }
 
   .product-brand-item {
@@ -130,8 +189,24 @@ img {
   .product-item-image {
     height: 250px;
   }
-  
+
   .description-brand-content {
     padding: 0 10px;
+  }
+
+  .zalo {
+    left: 0;
+  }
+
+  .facebook {
+    left: 0;
+  }
+
+  .telephone {
+    left: 0;
+  }
+
+  .fa-phone {
+    left: 190px;
   }
 }
