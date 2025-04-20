@@ -43,9 +43,11 @@
                 <label for="productName">Tên sản phẩm:</label><br>
                 <input type="text" id="productName" name="productName"><br><br>
                 <label for="productPrice">Giá cũ sản phẩm:</label><br>
-                <input type="number" id="productOldPrice" name="productOldPrice"><br><br>
+                <input type="text" id="productOldPrice" name="productOldPrice" oninput="formatNumber(this)">
+                <br><br>
                 <label for="productPrice">Giá mới sản phẩm:</label><br>
-                <input type="number" id="productNewPrice" name="productNewPrice"><br><br>
+                <input type="number" id="productNewPrice" name="productNewPrice" oninput="formatNumber(this)">
+                <br><br>
                 <label for="description">Mô tả sản phẩm:</label><br>
                 <input type="text" id="description" name="description"><br><br>
             </form>

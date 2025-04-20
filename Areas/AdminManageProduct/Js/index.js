@@ -103,17 +103,16 @@ const initPage = async function () {
       const row = `
                 <tr>
                     <td>
-                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct('${
-                          product.id
-                        }')"></i>
+                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct('${product.id
+        }')"></i>
                     </td>
                     <td>${product.productName}</td>
                     <td>${product.productOldPrice}</td>
                     <td>${product.productNewPrice}</td>
                     <td><div class="preview"
                     style="background-image: url('${GetShareImage(
-                      product.productImageUrl
-                    )}');"></div></td>
+          product.productImageUrl
+        )}');"></div></td>
                     <td>${product.description}</td>
                 </tr>
             `;
@@ -149,5 +148,16 @@ const checkCookie = async function () {
     window.location.href = "/Areas/Login/Views/index.html";
   }
 };
+
+function formatNumber(input) {
+  // Xóa tất cả ký tự không phải số và định dạng lại
+  let value = input.value.replace(/\D/g, '');
+
+  // Chia giá trị thành từng nhóm 3 chữ số và thêm dấu phẩy
+  value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+  // Cập nhật giá trị vào input
+  input.value = value;
+}
 
 initPage();
