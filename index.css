@@ -47,6 +47,7 @@ body {
   padding: 5px;
   border-top: 1px solid black;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .description-brand-content {
