@@ -61,9 +61,36 @@
             <button type="submit" id="insertProduct">Thêm sản phẩm</button>
         </div>
     </div>
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalEditBtn">&times;</span>
+            <h2>Thêm mới sản phẩm</h2>
+            <form id="addProductForm">
+                <label for="productName">Tên sản phẩm:</label><br>
+                <input type="text" id="productNameEdit" name="productNameEdit"><br><br>
+                <label for="productPrice">Giá cũ sản phẩm:</label><br>
+                <input type="number" id="productOldPriceEdit" name="productOldPriceEdit">
+                <br><br>
+                <label for="productPrice">Giá mới sản phẩm:</label><br>
+                <input type="number" id="productNewPriceEdit" name="productNewPriceEdit">
+                <br><br>
+                <label for="description">Mô tả sản phẩm:</label><br>
+                <input type="text" id="descriptionEdit" name="descriptionEdit"><br><br>
+            </form>
+            <div class="image-picker-2">
+                <div class="preview"
+                    style="background-image: url('https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg');"
+                    onclick="AddImage(this);"></div>
+                <input type="file" onchange="AddImage_OnChange(this);" />
+                <input type="hidden" value="" id="valueImageEdit" />
+            </div>
+            <button type="submit" id="updateProductBtn" onclick="updateProduct(this)">Sửa sản phẩm</button>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="/js/helper.js"></script>
 <script src="/Areas/AdminManageProduct/Js/index.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="/Areas/AdminManageProduct/Js/edit.js"></script>
 
 </html>

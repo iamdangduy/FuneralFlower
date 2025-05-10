@@ -1,11 +1,22 @@
 const modal = document.getElementById("addProductModal");
+const modalEdit = document.getElementById("editProductModal");
 const btn = document.getElementById("addProductBtn");
 const span = document.getElementById("closeModalBtn");
+const spanEdit = document.getElementById("closeModalEditBtn");
 const form = document.getElementById("addProductForm");
 
 // Hiển thị dialog khi nhấn nút
 btn.onclick = function () {
   modal.style.display = "block";
+  $(".preview").css(
+    "background-image",
+    'url("https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg")'
+  );
+};
+
+// Đóng dialog khi nhấn nút "x"
+spanEdit.onclick = function () {
+  modalEdit.style.display = "none";
 };
 
 // Đóng dialog khi nhấn nút "x"
@@ -15,7 +26,7 @@ span.onclick = function () {
 
 // Đóng dialog khi nhấn ra ngoài dialog
 window.onclick = function (event) {
-  if (event.target === modal) {
+  if (event.target === modal || event.target === modalEdit) {
     modal.style.display = "none";
   }
 };
@@ -103,16 +114,16 @@ const initPage = async function () {
       const row = `
                 <tr>
                     <td>
-                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct('${product.id
-        }')"></i>
+                        <i class="fa-solid fa-trash-can" style="cursor: pointer;" onclick="deleteProduct('${product.id}')"></i>
+                        <i class="fa-solid fa-pen-to-square" style="cursor: pointer;" onclick="openEditModal('${product.id}')"></i>
                     </td>
                     <td>${product.productName}</td>
                     <td>${product.productOldPrice}</td>
                     <td>${product.productNewPrice}</td>
                     <td><div class="preview"
                     style="background-image: url('${GetShareImage(
-          product.productImageUrl
-        )}');"></div></td>
+        product.productImageUrl
+      )}');"></div></td>
                     <td>${product.description}</td>
                 </tr>
             `;
