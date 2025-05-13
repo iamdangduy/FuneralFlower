@@ -9,3 +9,21 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.image-picker-2 .preview {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .5px solid #ccc;
+}
+
+.preview {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .5px solid #ccc;
+}
