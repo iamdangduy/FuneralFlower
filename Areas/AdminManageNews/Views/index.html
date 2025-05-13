@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Areas/AdminManageProduct/Styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/95d9b5bfe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Quản tin tức</h1>
+        <div class="btn-login">
+          <button id="addProductBtn" onclick="addNews()">Thêm mới</button>
+        </div>
+      </div>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 60px">Hành động</th>
+              <th>Tiêu đề</th>
+              <th>Ảnh tiêu đề</th>
+              <th>Nội dung</th>
+            </tr>
+          </thead>
+          <tbody id="productTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/helper.js"></script>
+  <script src="/Areas/AdminManageNews/Js/index.js"></script>
+</html>
