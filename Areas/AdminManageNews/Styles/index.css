@@ -95,3 +95,18 @@ input {
   background-repeat: no-repeat;
   border: 0.5px solid #ccc;
 }
+
+.news-content {
+  display: -webkit-box;
+  /* Sử dụng flexbox */
+  -webkit-box-orient: vertical;
+  /* Hướng theo chiều dọc */
+  overflow: hidden;
+  /* Ẩn nội dung vượt quá */
+  -webkit-line-clamp: 3;
+  /* Giới hạn số dòng hiển thị */
+  max-height: 4.5em;
+  /* Chiều cao cho 3 dòng (3 x chiều cao dòng) */
+  line-height: 1.5em;
+  /* Chiều cao dòng */
+}

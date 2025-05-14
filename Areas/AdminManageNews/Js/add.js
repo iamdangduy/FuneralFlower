@@ -4,7 +4,7 @@ var quill = new Quill("#editor", {
 });
 
 // Lấy nội dung khi nhấn nút
-document.getElementById("submitBtn").addEventListener("click", function () {
+document.getElementById("submitBtn").addEventListener("click", async function () {
   const content = quill.root.innerHTML; // Lấy nội dung HTML
 
   // Bạn có thể xử lý nội dung ở đây, ví dụ gửi đến server
@@ -18,8 +18,10 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     NewsContent: content
   };
 
-  console.log(reqData);
-
+  const rs = await SendPostRequest(`News/InsertNews`, reqData);
+  if (rs.status == "success") {
+    alert("Thêm tin tức thành công!");
+  }
 });
 
 var AddImage = function (el) {
