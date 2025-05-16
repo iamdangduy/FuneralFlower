@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <link rel="stylesheet" href="/Areas/AdminManageNews/Styles/add.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
-  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-  <link rel="stylesheet" href="/Areas/AdminManageNews/Styles/add.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Thêm mới</h1>
-    </div>
-    <div class="content">
-      <div class="title">
-        <h2>Tiêu đề</h2>
-        <input type="text" name="titleText" id="titleText" />
-      </div>
-      <div class="title-image">
-        <h2>Ảnh tiêu đề</h2>
-        <div class="image-picker-2">
-          <div class="preview"
-            style="background-image: url('https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg');"
-            onclick="AddImage(this);"></div>
-          <input type="file" onchange="AddImage_OnChange(this);" />
-          <input type="hidden" value="" id="valueImage" />
-        </div>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Thêm mới</h1>
       </div>
       <div class="content">
-        <h2>Nội dung</h2>
-        <div id="editor"></div>
+        <div class="title">
+          <h2>Tiêu đề</h2>
+          <input type="text" name="titleText" id="titleText" />
+        </div>
+        <div class="title-image">
+          <h2>Ảnh tiêu đề</h2>
+          <div class="image-picker-2">
+            <div
+              class="preview"
+              style="
+                background-image: url('https://photo.znews.vn/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg');
+              "
+              onclick="AddImage(this);"
+            ></div>
+            <input type="file" onchange="AddImage_OnChange(this);" />
+            <input type="hidden" value="" id="valueImage" />
+          </div>
+        </div>
+        <div class="content">
+          <h2>Nội dung</h2>
+          <div id="editor"></div>
+        </div>
+        <button id="submitBtn" style="margin-top: 20px">Lưu Nội Dung</button>
+        <div class="content-input"></div>
       </div>
-      <button id="submitBtn" style="margin-top: 20px">Lưu Nội Dung</button>
-      <div class="content-input"></div>
     </div>
-  </div>
-</body>
-<script src="/js/helper.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="/Areas/AdminManageNews/Js/add.js"></script>
-
+  </body>
+  <script src="/js/helper.js"></script>
+  <script src="/Areas/AdminManageNews/Js/add.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#editor").summernote();
+    });
+  </script>
 </html>
