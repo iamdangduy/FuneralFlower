@@ -54,10 +54,10 @@ img {
 
 .news-item {
   width: 30%;
-  height: 300px;
   margin-left: 20px;
   margin-top: 20px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .news-item:hover .news-header {

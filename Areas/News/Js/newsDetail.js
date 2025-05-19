@@ -7,8 +7,6 @@ function getQueryParam(param) {
 // Lấy id từ query string
 const productId = getQueryParam('id');
 
-console.log(productId);
-
 const initPage = async function () {
     const rs = await SendGetRequest(`News/GetNewsById?Id=${productId}`);
     if (rs.status == "success") {
