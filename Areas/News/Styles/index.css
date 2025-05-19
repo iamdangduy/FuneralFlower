@@ -58,10 +58,13 @@ img {
   margin-top: 20px;
   cursor: pointer;
   box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .news-item:hover .news-header {
-  color: #EBA83E;
+  color: #eba83e;
 }
 
 .news-image {
@@ -89,4 +92,16 @@ img {
   overflow-wrap: break-word;
   text-overflow: ellipsis;
   margin-top: 10px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+h1 {
+  margin: 0;
 }
