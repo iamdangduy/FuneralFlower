@@ -19,9 +19,6 @@ const initPage = async function () {
               />
             </div>
             <div class="news-header">${product.title}</div>
-            <div class="news-content">
-              ${product.newsContent}
-            </div>
             <a/>
           </div>
             `;
