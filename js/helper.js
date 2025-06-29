@@ -1,9 +1,13 @@
-const isDebug = true; // false
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault(); // Ngăn chặn menu chuột phải
+});
+
+const isDebug = false; // false
 
 const Enum = {
   URL: {
-    API: isDebug ? "https://localhost:7081/api/" : "https://xyz.com/api/",
-    IMG: isDebug ? "https://localhost:7081/" : "https://xyz.com/api/",
+    API: isDebug ? "https://localhost:7081/api/" : "https://api.hoatuoibaonam.com/api/",
+    IMG: isDebug ? "https://localhost:7081/" : "https://api.hoatuoibaonam.com/",
   },
 };
 
