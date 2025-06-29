@@ -1,4 +1,5 @@
 @media only screen and (max-width: 500px) {
+
   /* màn hình mobile */
   .content-left {
     width: 0%;
@@ -10,5 +11,10 @@
 
   .content-mid {
     width: 100%;
+  }
+
+  img {
+    pointer-events: none;
+    /* Ngăn chặn tương tác với hình ảnh */
   }
 }
