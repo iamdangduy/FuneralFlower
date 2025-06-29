@@ -1,3 +1,7 @@
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault(); // Ngăn chặn menu chuột phải
+});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -34,20 +38,19 @@ const initPage = async function () {
     tbody.empty(); // Xóa nội dung cũ
     rs.data.forEach((product) => {
       const row = `
-                  <a href="/Areas/ProductDetail/Views/index.html?id=${
-                    product.id
-                  }" class="product-brand-item">
+                  <a href="/Areas/ProductDetail/Views/index.html?id=${product.id
+        }" class="product-brand-item">
                     <div class="product-item-image">
                         <img src="${GetShareImage(
-                          product.productImageUrl
-                        )}" alt="" />
+          product.productImageUrl
+        )}" alt="" />
                     </div>
                     <div class="product-item-name">
                     ${product.productName}
                     </div>
                     <div class="product-item-price">${formatCurrency(
-                      product.productNewPrice
-                    )}</div>
+          product.productNewPrice
+        )}</div>
                     <div class="product-button-buy">
                         <i class="fa-solid fa-cart-arrow-down" style="margin-right: 10px; color: black;"></i>Mua qua Zalo
                     </div>
