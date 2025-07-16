@@ -32,7 +32,7 @@ function formatCurrency(amount) {
 }
 
 const initPage = async function () {
-  const rs = await SendGetRequest(`Product/GetListPreviewProduct`);
+  const rs = await SendGetRequest(`Product/GetListProduct`);
   if (rs.status == "success") {
     const tbody = $(".product-brand-content");
     tbody.empty(); // Xóa nội dung cũ
