@@ -15,6 +15,12 @@ body {
   z-index: 1;
 }
 
+.text-header {
+  font-size: 38px;
+  margin: 10px 0;
+  padding-top: 5px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -178,6 +184,10 @@ img {
 
 @media only screen and (max-width: 500px) {
   /* màn hình mobile */
+
+  .text-header {
+    font-size: 20px;
+  }
 
   .product-brand-item {
     width: 50%;
