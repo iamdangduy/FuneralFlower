@@ -83,7 +83,7 @@ body {
 
 .product-brand-item {
   width: 284px;
-  height: 500px;
+  height: 470px;
   border: 0.5px solid gray;
   padding: 10px;
   text-decoration: none;
@@ -184,6 +184,10 @@ img {
 
 @media only screen and (max-width: 500px) {
   /* màn hình mobile */
+  h2 {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important; 
+  }
 
   .text-header {
     font-size: 20px;
@@ -194,7 +198,11 @@ img {
   }
 
   .product-brand-item {
-    height: 380px;
+    height: 390px;
+  }
+
+  .product-item-name {
+    height: 40px;
   }
 
   .product-item-image {
