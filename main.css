@@ -14,7 +14,7 @@
   }
 
   img {
-    pointer-events: none;
+    pointer-events: none !important;
     /* Ngăn chặn tương tác với hình ảnh */
   }
 }
